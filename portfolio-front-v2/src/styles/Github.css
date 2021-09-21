@@ -1,0 +1,68 @@
+@import url(./global.css);
+
+.github {
+  background: #17055c;
+  height: 100vh;
+  z-index: 1;
+}
+.carousel{
+    position: relative;
+}
+
+.carousel .thumbs{
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 10px;
+}
+
+.carousel .thumb{
+cursor: pointer;
+margin: 0 5px;
+}
+
+.carousel .git-overlay {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  padding: 0.4rem 1.5rem;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffff;
+}
+.carousel .git-title-link{
+    margin: 0.8rem 0 1rem 0;
+}
+
+.git-content {
+   margin-top: 100px;
+
+}
+
+.git-img {
+}
+
+
+
+.git-title-link {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size:24px;
+    color: beige;
+}
+
+.git-description {
+    font-family: "Oswald";
+}
+
+@media screen and (max-width:600px) {
+    .carousel .git-content .git-img{
+        width: 100vw;
+        height:40vh;
+        object-fit: cover;
+    }
+    
+}

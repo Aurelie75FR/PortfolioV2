@@ -1,6 +1,6 @@
 import React from "react";
 import "./../styles/About.css";
-import Skills from "../Components/Skills";
+import Skills from "../Components/Childs/Skills";
 import Aurelie from "../assets/Aurelie.png";
 
 function About() {
@@ -67,7 +67,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="hover-me">Passe ta souris dessus -{">"} </div>
+      {/* <div className="hover-me">Passe ta souris dessus -{">"} </div> */}
       <div className="wave-final"></div>
     </div>
   );

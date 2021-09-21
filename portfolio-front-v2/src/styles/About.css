@@ -6,6 +6,7 @@
 .about {
   background-color: #100442;
   height: 100vh;
+  z-index: 2;
 }
 /* div qui scope img pour le placement et utilisation de filter  */
 .shadow {
@@ -53,7 +54,7 @@
   transform: translate(-50%, -10%);
 }
 
-.hover-me {
+/* .hover-me {
   position: absolute;
   top: 44%;
   left: 17%;
@@ -62,7 +63,7 @@
   font-family: "Oswald";
   font-size: 1.2rem;
   color: #ff9472;
-}
+} */
 
 /* content en grid */
 .skill-content {
@@ -142,7 +143,6 @@
 .progress-bar {
   font-size: 11px;
   background: linear-gradient(to left, #f2709c, #ff9472);
-  /* box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C; */
   border-radius: 20px;
   color: rgb(226, 235, 194);
   display: flex;
