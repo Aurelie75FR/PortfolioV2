@@ -5,8 +5,15 @@
   height: 100vh;
   z-index: 1;
 }
+
+.carousel .slider-wrapper{
+    width: 60%;
+   
+}
+
 .carousel{
     position: relative;
+   
 }
 
 .carousel .thumbs{
@@ -38,13 +45,9 @@ margin: 0 5px;
 
 .git-content {
    margin-top: 100px;
+   /* width: 70%; */
 
 }
-
-.git-img {
-}
-
-
 
 .git-title-link {
     text-decoration: none;

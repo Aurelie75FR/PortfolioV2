@@ -57,6 +57,10 @@ function Github() {
         interval={5000}
         showStatus={false}
         showIndicators={false}
+        centerMode={true}
+        centerSlidePercentage={"100%"}
+        showArrows={false}
+        // width={"60%"}
       >
         <div className="git-content">
           <img
