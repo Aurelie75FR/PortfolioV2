@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import "../styles/Contact.css";
 
 function Contact() {
   function sendEmail(e) {
@@ -23,39 +24,51 @@ function Contact() {
     e.target.reset();
   }
   return (
-    <div>
-      <h1>Contact Form</h1>
+    <div className="contact-page">
       <div className="form">
         <form className="contact-form" onSubmit={sendEmail}>
-          <label htmlFor="name">Name</label>
-          <input
-            className="nameInput"
-            type="text"
-            name="name"
-            placeholder="Name"
-          />
-          <label htmlFor="email">Email</label>
-          <input
-            className="emailInput"
-            type="email"
-            name="email"
-            placeholder="Email"
-          />
-          <label htmlFor="subject">Subject</label>
-          <input
-            className="subjectInput"
-            type="text"
-            name="subject"
-            placeholder="Subject"
-          />
-          <label htmlFor="message">Message</label>
-          <textarea
-            name="message"
-            placeholder="Your message ..."
-            rows="10"
-            cols="40"
-          />
-          <button type="submit"> Send</button>
+          <div className="form-box">
+            <label htmlFor="name">Name</label>
+            <input
+              className="nameInput"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div className="form-box">
+            <label htmlFor="email">Email</label>
+            <input
+              className="emailInput"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div className="form-box">
+            <label htmlFor="subject">Subject</label>
+            <input
+              className="subjectInput"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+            />
+          </div>
+
+          <div className="form-box">
+            <label htmlFor="message">Message</label>
+            <textarea
+              className="message-area"
+              name="message"
+              placeholder="Your message ..."
+              rows="10"
+              cols="40"
+            />
+          </div>
+
+          <input type="submit" value="Send" className="form-button" />
         </form>
       </div>
     </div>

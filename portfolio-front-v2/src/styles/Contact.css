@@ -1,0 +1,90 @@
+@import url(./global.css);
+
+.contact-page {
+  background-color: #100442;
+  height: 100vh;
+  font-family: "Montserrat";
+  color: pink;
+}
+
+.form {
+  position: absolute;
+  width: 50%;
+  top: 20%;
+  left: 40%;
+}
+
+.contact-form {
+  background: #17065c4b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.form-box {
+  display: block;
+  max-width: 768px;
+  position: relative;
+  width: 100%;
+}
+
+.form-box > label {
+  display: none;
+}
+
+.form-box > input,
+textarea {
+  background: none;
+  text-decoration: none;
+  outline: none;
+
+  border: 1px solid #fff;
+  margin-top: 10px;
+
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Oswald";
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+
+.form-box > textarea {
+  resize: none;
+  overflow: auto;
+  height: 100px;
+  width: 100%;
+}
+
+.nameInput {
+  float: left;
+  width: 47%;
+}
+
+.emailInput {
+  float: right;
+  width: 47%;
+}
+
+.subjectInput {
+  width: 100%;
+}
+
+.form-button {
+  width: 100%;
+  background: none;
+
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+
+  font-family: "Oswald";
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: antiquewhite;
+}
