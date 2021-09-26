@@ -8,23 +8,6 @@
   height: 100vh;
   z-index: 2;
 }
-/* div qui scope img pour le placement et utilisation de filter  */
-.shadow {
-  position: absolute;
-  top: 22%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  width: 20%;
-
-  filter: drop-shadow(0px 1px 10px #ffdafe);
-  -webkit-filter: drop-shadow(0px 1px 10px #ffdafe); /* Safari 6.0-9.0*/
-}
-/* img  */
-.circle {
-  width: 200px;
-
-  clip-path: circle(40% at 50% 50%);
-}
 /* overlay transparent */
 .content {
   position: absolute;
@@ -49,25 +32,39 @@
 /* container sur le placement */
 .skill-container {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 42%;
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, -50%);
 }
 
-/* .hover-me {
+.hover-me {
   position: absolute;
-  top: 44%;
-  left: 17%;
+  top: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
 
   font-family: "Oswald";
   font-size: 1.2rem;
-  color: #ff9472;
-} */
+  color: #ff937236;
+}
+
+.responsive-skill{
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Oswald";
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #ff9372e0;
+  border-bottom: 1px solid saddlebrown;
+}
 
 /* content en grid */
 .skill-content {
-  width: 500px;
+  max-width: 500px;
 
   text-align: center;
 
@@ -76,7 +73,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 40px;
   grid-auto-columns: auto;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-auto-rows: auto;
   grid-row-gap: 20px;
 }
@@ -99,7 +96,7 @@
   transition: height 0.4s 0.4s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-/* .categories:hover .hover-me{
+ /* .hover-me ~ .categories:hover {
   opacity: 0;
   transition: opacity 0.5 ease-in-out;
 } */
@@ -162,6 +159,7 @@
   background: #17055c;
   width: 100%;
   height: 150px;
+
   /* box-shadow: 3px 0px 23px rgba(229, 229, 229, 0.911); */
 
   clip-path: polygon(
@@ -269,4 +267,51 @@
     99% 25.39%,
     100% 25.57%
   );
+}
+@media screen and (max-width:768px) {
+  .about{
+    height: 170vh;
+    width: 100vw;
+  }
+  
+  .content{
+    top: 19%;
+    max-width: 450px;
+    min-width: 400px;
+  }
+
+  .content p{
+    font-size: 1rem;
+  }
+
+  .hover-me{
+    display: none;
+  }
+
+  .responsive-skill{
+    display: block;
+  }
+
+  .skill-container{
+    top: 100%;
+   left: 50%;
+  }
+
+  .skill-content{
+    display: block;
+    max-width: 350px;
+  
+  }
+  .categories{
+    margin-top: 20px;
+  }
+
+  .categories > .skills{
+    opacity: 1;
+  }
+
+  .wave-final{
+    display: none;
+  }
+  
 }

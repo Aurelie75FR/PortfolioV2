@@ -1,14 +1,14 @@
 import React from "react";
 import "./../styles/About.css";
 import Skills from "../Components/Childs/Skills";
-import Aurelie from "../assets/Aurelie.png";
+
 
 function About() {
   return (
-    <div className="about">
-      <div className="shadow">
+    <div className="about" id="About">
+      {/* <div className="shadow">
         <img src={Aurelie} alt="Aurelie" className="circle" />
-      </div>
+      </div> */}
 
       <div className="content">
         <p>
@@ -20,6 +20,8 @@ function About() {
           <b>OS : Windows/Ubuntu</b>
         </p>
       </div>
+      <div className="hover-me">Passe ta souris sur les skills  </div>
+      <div className="responsive-skill">Mes Skills</div>
       <div className="skill-container">
         <div className="skill-content">
           <div className="categories">
@@ -39,7 +41,6 @@ function About() {
           </div>
           <div className="categories">
             <h3>Frameworks/Librairies</h3>
-            {/* <br /> */}
             <div className="skills">
               <h5>EXPRESS.JS HBS</h5>
               <Skills props="90" />
@@ -67,7 +68,6 @@ function About() {
           </div>
         </div>
       </div>
-      {/* <div className="hover-me">Passe ta souris dessus -{">"} </div> */}
       <div className="wave-final"></div>
     </div>
   );

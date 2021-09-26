@@ -18,10 +18,10 @@ function App() {
 
         <Route path="/" component={() => <div>Error 404</div>} />
       </Switch>
-      {/* <Home/> */}
-      {/* <About/> */}
-      {/* <Github/> */}
-      {/* <Contact/> */}
+      {/* <Home/>
+      <About/>
+      <Github/>
+      <Contact/> */}
     </>
   );
 }

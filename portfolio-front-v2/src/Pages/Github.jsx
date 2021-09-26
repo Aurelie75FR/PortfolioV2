@@ -50,15 +50,15 @@ function Github() {
   // ]
 
   return (
-    <div className="github">
+    <div className="github" id="Github">
       <Carousel
         autoPlay
         infiniteLoop
         interval={5000}
         showStatus={false}
         showIndicators={false}
-        centerMode={true}
-        centerSlidePercentage={"100%"}
+        // centerMode={true}
+        // centerSlidePercentage={"100%"}
         showArrows={false}
         // width={"60%"}
       >
@@ -165,8 +165,18 @@ function Github() {
             </a>
             <p className="git-description">Lorem ipsum dolor sit amet.</p>
           </div>
+          <div className="git-overlay">
+            <a
+              href="https://github.com/Aurelie75FR/lab-dom-pizza-builder"
+              className="git-title-link"
+            >
+              JS DOM Pizza Builder
+            </a>
+            <p className="git-description">Lorem ipsum dolor sit amet.</p>
+          </div>
         </div>
       </Carousel>
+      <div className="wave-three"></div>
     </div>
   );
 }

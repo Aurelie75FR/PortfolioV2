@@ -1,17 +1,19 @@
-import React from "react";
+import React , {useRef} from "react";
 import emailjs from "emailjs-com";
 import "../styles/Contact.css";
 
 function Contact() {
-  function sendEmail(e) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        `${process.env.SERVICE_ID},
-         ${process.env.TEMPLATE_ID}`,
-        e.target,
-        ` ${process.env.USER_ID}`
+          "service_vo6m80m",
+          "template_2xqe41b",
+          form.current,
+        "user_lQpxdbXovWfyhlJP6gXgT"
       )
       .then(
         (result) => {
@@ -21,19 +23,21 @@ function Contact() {
           console.log(error.text);
         }
       );
-    e.target.reset();
-  }
+  };
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="Contact">
+      <div className="shadow">
+        <img src="/images/Aurelie.png" alt="Aurelie" className="circle" />
+      </div>
       <div className="form">
-        <form className="contact-form" onSubmit={sendEmail}>
+      <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <div className="form-box">
             <label htmlFor="name">Name</label>
             <input
               className="nameInput"
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Nom/Prénom"
             />
           </div>
 
@@ -53,7 +57,7 @@ function Contact() {
               className="subjectInput"
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder="Sujet"
             />
           </div>
 
@@ -62,15 +66,19 @@ function Contact() {
             <textarea
               className="message-area"
               name="message"
-              placeholder="Your message ..."
+              placeholder="Message ..."
               rows="10"
               cols="40"
             />
           </div>
 
-          <input type="submit" value="Send" className="form-button" />
+          <input type="submit" value="Envoyer" className="form-button" />
         </form>
       </div>
+      <div className="resume">
+        <a href="images/AurelieLopezVicente.pdf" className="mon-cv">Mon Curriculum Vitae</a>
+      </div>
+      <div className="links"></div>
     </div>
   );
 }
