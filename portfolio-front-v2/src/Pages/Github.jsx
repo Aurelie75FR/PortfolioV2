@@ -51,16 +51,16 @@ function Github() {
 
   return (
     <div className="github" id="Github">
+      <h2 className="title-code-project"> {"< "}Codes et Projets {" />"}</h2>
       <Carousel
         autoPlay
         infiniteLoop
         interval={5000}
         showStatus={false}
-        showIndicators={false}
-        // centerMode={true}
-        // centerSlidePercentage={"100%"}
+        showIndicators={true}
         showArrows={false}
-        // width={"60%"}
+        showThumbs={false}
+        
       >
         <div className="git-content">
           <img
@@ -75,7 +75,7 @@ function Github() {
             >
               Node Artistify
             </a>
-            <p className="git-description">Lorem ipsum dolor sit amet.</p>
+            <p className="git-description">Authentification et CRUD</p>
           </div>
         </div>
         <div className="git-content">
@@ -87,10 +87,10 @@ function Github() {
             >
               React Ironbeers
             </a>
-            <p className="git-description">Lorem ipsum dolor sit amet.</p>
+            <p className="git-description">Beer Api et CRUD</p>
           </div>
         </div>
-        <div className="git-content">
+        {/* <div className="git-content">
           <img src="/images/IronBeer.PNG" alt="IronBeer" className="git-img" />
           <div className="git-overlay">
             <a
@@ -101,7 +101,7 @@ function Github() {
             </a>
             <p className="git-description">Lorem ipsum dolor sit amet.</p>
           </div>
-        </div>
+        </div> */}
         <div className="git-content">
           <img
             src="/images/IronCine.PNG"
@@ -115,7 +115,7 @@ function Github() {
             >
               Node Express Cinema
             </a>
-            <p className="git-description">Lorem ipsum dolor sit amet.</p>
+            <p className="git-description">Entrainement sur le Router et CRUD</p>
           </div>
         </div>
         <div className="git-content">
@@ -147,7 +147,7 @@ function Github() {
             >
               Node Mongoose Recipes
             </a>
-            <p className="git-description">Lorem ipsum dolor sit amet.</p>
+            <p className="git-description">Entrainement sur les methods avec Mongoose</p>
           </div>
         </div>
         <div className="git-content">
@@ -163,16 +163,7 @@ function Github() {
             >
               JS DOM Pizza Builder
             </a>
-            <p className="git-description">Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="git-overlay">
-            <a
-              href="https://github.com/Aurelie75FR/lab-dom-pizza-builder"
-              className="git-title-link"
-            >
-              JS DOM Pizza Builder
-            </a>
-            <p className="git-description">Lorem ipsum dolor sit amet.</p>
+            <p className="git-description">Pur Javascript DOM et logique</p>
           </div>
         </div>
       </Carousel>

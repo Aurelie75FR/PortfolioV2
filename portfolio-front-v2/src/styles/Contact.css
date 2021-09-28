@@ -8,36 +8,26 @@
   color: pink;
 }
 
-/* div qui scope img pour le placement et utilisation de filter  */
-.shadow {
+.mail-header{
   position: absolute;
-  top: 22%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  width: 20%;
-
-  filter: drop-shadow(0px 1px 10px #ffdafe);
-  -webkit-filter: drop-shadow(0px 1px 10px #ffdafe); /* Safari 6.0-9.0*/
-}
-/* img  */
-.circle {
-  width: 200px;
-
-  clip-path: circle(40% at 50% 50%);
+  top: 17%;
+  left: 75%;
+  transform: translate(-50%,-50%);
 }
 
 .form {
   position: absolute;
-  width: 35%;
-  top: 40%;
-  left: 80%;
+  width: 30%;
+
+  top: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
 }
 
 .contact-form {
   background: #17065ca2;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   width: 100%;
 
   text-align: center;
@@ -45,7 +35,6 @@
 
 .form-box {
   max-width: 768px;
-
   width: 100%;
 }
 
@@ -61,6 +50,7 @@ textarea {
 
   border: 1px solid #fff;
   margin-top: 10px;
+  padding: 5px;
 
   font-size: 17px;
   font-weight: bold;
@@ -74,12 +64,13 @@ textarea {
 .form-box > textarea {
   resize: none;
   overflow: auto;
-  height: 100px;
+  height: 200px;
   width: 100%;
 }
 
 ::placeholder{
   color: #ffdafe;
+  margin-right: 2px;
 }
 
 .nameInput {
@@ -158,23 +149,29 @@ transition: 2s ease-in-out;
   border-bottom: 3px solid rgba(74, 7, 83, 0.534);
 }
 
+.links{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.linkedin:hover , .github-png:hover  {
+  filter: drop-shadow(0px 1px 10px #ffdafe);
+  -webkit-filter: drop-shadow(0px 1px 10px #ffdafe); /* Safari 6.0-9.0*/
+}
 
 
 @media screen and (max-width: 768px) {
-  .shadow .circle {
-    width: 150px;
-  }
-  .shadow {
-    margin: auto;
-    text-align: center;
-    top: 15%;
-    left: 48%;
-    width: 100%;
+
+  .mail-header{
+    top: 10%;
+    left: 50%;
   }
 
   .form {
     width: 70%;
-    top: 50%;
+    top: 42%;
     left: 50%;
   }
 
@@ -185,13 +182,13 @@ textarea{
 }
   .resume{
     text-align: center;
-    bottom: 10%;
+    bottom: 7%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 100%;
   }
   .mon-cv{
     padding: 5px;
-    font-size: 11px;
+    font-size: 15px;
   }
 }

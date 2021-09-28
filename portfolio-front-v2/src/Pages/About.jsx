@@ -6,10 +6,9 @@ import Skills from "../Components/Childs/Skills";
 function About() {
   return (
     <div className="about" id="About">
-      {/* <div className="shadow">
-        <img src={Aurelie} alt="Aurelie" className="circle" />
-      </div> */}
-
+  <div className="shadow">
+        <img src="/images/avatarAurel.png" alt="Aurelie" className="circle" />
+      </div>
       <div className="content">
         <p>
           Salut ! Moi c’est Aurélie, passionnée de code depuis 2012. J’ai
@@ -53,11 +52,26 @@ function About() {
             </div>
           </div>
           <div className="categories">
+            <h2>Stack</h2>
+            <div className="skills">
+              <h5>TERMINAL</h5>
+              <Skills props="92" />
+              <h5>GIT</h5>
+              <Skills props="75" />
+              <h5>MONGODB</h5>
+              <Skills props="80" />
+              <h5>NOSQL</h5>
+              <Skills props="55" />
+            </div>
+          </div>
+          <div className="categories">
             <h2>Prochainement</h2>
             <div className="skills next">
               <h5>REDUX</h5>
               <br />
               <h5>GATSBY</h5>
+              <br />
+              <h5>POSTGRESQL</h5>
               <br />
               <h5>BULMA</h5>
               <br />

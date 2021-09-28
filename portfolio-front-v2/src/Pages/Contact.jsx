@@ -26,9 +26,10 @@ function Contact() {
   };
   return (
     <div className="contact-page" id="Contact">
-      <div className="shadow">
+      {/* <div className="shadow">
         <img src="/images/Aurelie.png" alt="Aurelie" className="circle" />
-      </div>
+      </div> */}
+      <h2 className="mail-header">Contactez-moi</h2>
       <div className="form">
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <div className="form-box">
@@ -78,7 +79,14 @@ function Contact() {
       <div className="resume">
         <a href="images/AurelieLopezVicente.pdf" className="mon-cv">Mon Curriculum Vitae</a>
       </div>
-      <div className="links"></div>
+      <div className="links">
+        <a href="https://www.linkedin.com/in/aurelie-lopez-vicente/" className="linkedin">
+          <img src={"/images/logo/Linkedin.png"} alt="linkedin" style={{width : "30%", marginRight : "10px"}} />
+        </a>
+        <a href="https://github.com/Aurelie75FR" className="github-png">
+          <img src={"/images/logo/Github.png"} alt="Github" style={{width : "30%", marginLeft : "10px"}} />
+        </a>
+      </div>
     </div>
   );
 }
