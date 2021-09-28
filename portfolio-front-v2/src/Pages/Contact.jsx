@@ -26,9 +26,9 @@ function Contact() {
   };
   return (
     <div className="contact-page" id="Contact">
-      {/* <div className="shadow">
-        <img src="/images/Aurelie.png" alt="Aurelie" className="circle" />
-      </div> */}
+      <div className="presentation-fin">
+        <p>Aurelie Lopez-Vicente <br /> Paris, <b>France</b> <br /> Web Développeuse Full-Stack </p>
+      </div>
       <h2 className="mail-header">Contactez-moi</h2>
       <div className="form">
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
@@ -87,6 +87,7 @@ function Contact() {
           <img src={"/images/logo/Github.png"} alt="Github" style={{width : "30%", marginLeft : "10px"}} />
         </a>
       </div>
+      <h5 className="footer">Fait avec amour <s>et rage</s> sur React </h5>
     </div>
   );
 }

@@ -8,11 +8,28 @@
   color: pink;
 }
 
-.mail-header{
+.presentation-fin {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+  background: #4f2974d3;
+  padding: 15px;
+  border-radius: 25px;
+  width: 30%;
+}
+
+.presentation-fin > p {
+  font-size: larger;
+  text-align: center;
+}
+
+.mail-header {
   position: absolute;
   top: 17%;
   left: 75%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .form {
@@ -68,7 +85,7 @@ textarea {
   width: 100%;
 }
 
-::placeholder{
+::placeholder {
   color: #ffdafe;
   margin-right: 2px;
 }
@@ -103,14 +120,14 @@ textarea {
   color: antiquewhite;
 }
 
-.form-button:hover{
-border: 2px solid whitesmoke;
-transition: 2s ease-in-out;
+.form-button:hover {
+  border: 2px solid whitesmoke;
+  transition: 2s ease-in-out;
 }
 
 .resume {
   position: absolute;
-  bottom: 40%;
+  bottom: 20%;
   left: 20%;
   transform: translate(-50%, -50%);
   height: 10%;
@@ -135,7 +152,7 @@ transition: 2s ease-in-out;
     #573675b4 100%
   );
 
-  padding: 1.5rem;
+  padding: 1rem;
   width: 20rem;
   letter-spacing: 0.22em;
   outline: none;
@@ -149,46 +166,70 @@ transition: 2s ease-in-out;
   border-bottom: 3px solid rgba(74, 7, 83, 0.534);
 }
 
-.links{
+.links {
   position: absolute;
   bottom: 2%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.linkedin:hover , .github-png:hover  {
+.linkedin:hover,
+.github-png:hover {
   filter: drop-shadow(0px 1px 10px #ffdafe);
   -webkit-filter: drop-shadow(0px 1px 10px #ffdafe); /* Safari 6.0-9.0*/
 }
 
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: bold;
+}
+
+.footer > s {
+  font-size: smaller;
+}
 
 @media screen and (max-width: 768px) {
+  .presentation-fin{
+    display: none;
+  }
 
-  .mail-header{
-    top: 10%;
+  .mail-header {
+    top: 6%;
     left: 50%;
+    font-size: large;
   }
 
   .form {
-    width: 70%;
+    width: 88%;
     top: 42%;
     left: 50%;
   }
 
   .form-box > input,
-textarea{
-  font-family: 12px;
-  font-weight: normal;
-}
-  .resume{
+  textarea {
+    font-family: 10px;
+    font-weight: normal;
+  }
+  .resume {
     text-align: center;
     bottom: 7%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 100%;
   }
-  .mon-cv{
+  .mon-cv {
     padding: 5px;
     font-size: 15px;
+  }
+  .links {
+    bottom: 1%;
+    left: 55%;
+  }
+  .footer {
+    font-size: x-small;
   }
 }

@@ -64,9 +64,16 @@ a.current {
     border-bottom: 1px solid #ffff;
     line-height: 50px;
     text-align: center;
+    margin-right: auto;
   }
 
   .btn {
     display: block;
+    background: none;
+    border: none;
+
+    color: antiquewhite;
+    font-size: 28px;
+    margin-right: 10px;
   }
 }

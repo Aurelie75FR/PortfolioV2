@@ -50,8 +50,10 @@
 .skill-container {
   position: absolute;
   top: 70%;
-  left: 36%;
+  left: 35%;
   transform: translate(-50%, -50%);
+  /* width: 100%; */
+  text-align: center;
 }
 
 .hover-me {
@@ -65,7 +67,7 @@
   color: #ff937265;
 }
 
-.responsive-skill{
+.responsive-skill {
   /* display: none; */
   position: absolute;
   top: 43%;
@@ -108,19 +110,12 @@
 }
 /* animation avec hover */
 .categories:hover > .skills {
-  /* cursor: pointer; */
   opacity: 1;
   transition: height 0.4s 0.4s ease-in-out, opacity 0.5s ease-in-out;
 }
 
- /* .hover-me ~ .categories:hover {
-  opacity: 0;
-  transition: opacity 0.5 ease-in-out;
-} */
-
 
 /* Skills.jsx */
-/* skill bar content */
 .skills {
   display: flex;
   flex-direction: column;
@@ -176,8 +171,6 @@
   background: #17055c;
   width: 100%;
   height: 150px;
-
-  /* box-shadow: 3px 0px 23px rgba(229, 229, 229, 0.911); */
 
   clip-path: polygon(
     100% 100%,
@@ -285,55 +278,53 @@
     100% 25.57%
   );
 }
-@media screen and (max-width:768px) {
-  .circle{
+@media screen and (max-width: 768px) {
+  .circle {
     display: none;
   }
 
-  .about{
-    height: 170vh;
-    width: 100vw;
+  .about {
+    height: 200vh;
+    width: 105%;
   }
-  
-  .content{
+
+  .content {
     top: 19%;
     left: 50%;
     max-width: 450px;
     min-width: 400px;
   }
 
-  .content p{
+  .content p {
     font-size: 1rem;
   }
 
-  .hover-me{
+  .hover-me {
     display: none;
   }
 
-  .responsive-skill{
+  .responsive-skill {
     display: block;
   }
 
-  .skill-container{
-    top: 100%;
-   left: 50%;
+  .skill-container {
+    top: 120%;
+    left: 50%;
   }
 
-  .skill-content{
+  .skill-content {
     display: block;
     max-width: 350px;
-  
   }
-  .categories{
+  .categories {
     margin-top: 20px;
   }
 
-  .categories > .skills{
+  .categories > .skills {
     opacity: 1;
   }
 
-  .wave-final{
+  .wave-final {
     display: none;
   }
-  
 }

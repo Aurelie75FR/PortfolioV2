@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../styles/NavBar.css";
 import { NavLink } from "react-router-dom";
+import {FaBars} from "react-icons/fa"
+import "../styles/NavBar.css";
 
 
 function NavBar() {
@@ -57,7 +58,7 @@ function NavBar() {
         </ul>
       )}
       <button onClick={handleToggle} className="btn">
-        Btn
+      <FaBars /> 
       </button>
     </nav>
   );
