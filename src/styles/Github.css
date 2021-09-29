@@ -1,0 +1,126 @@
+@import url(./global.css);
+
+.github {
+  background: #17055c;
+  height: 100vh;
+  z-index: 1;
+}
+.title-code-project{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: pink;
+}
+
+.github-tips{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-family: "Oswald";
+    letter-spacing: 0.15rem;
+    color: #ff937296;
+}
+
+.carousel .slider-wrapper{
+    margin-top: 50px;
+    width: 55%;
+    min-height: 100%;
+}
+
+.carousel .carousel-slider{
+    position: relative;
+}
+
+.carousel{
+    position: relative;
+}
+
+.carousel > .control-dots{
+display: flex;
+justify-content: center;
+padding: 10px;
+cursor: pointer;
+margin: 0 10px;
+}
+
+
+
+.carousel .git-overlay {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  padding: 0.4rem 1.5rem;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffff;
+}
+.carousel .git-title-link{
+    margin: 0.8rem 0 1rem 0;
+}
+
+.git-content {
+   margin-top: 100px;
+  
+}
+
+.git-title-link {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size:24px;
+    color: beige;
+}
+
+.git-description {
+    font-family: "Oswald";
+}
+
+.wave-three {
+    position: absolute;
+    bottom: 0%;
+   
+    background: linear-gradient(to left, #f2709c, #ff9472);
+   
+    width: 100%;
+    height: 150px;
+   
+    clip-path: polygon(100% 100%, 0% 100%, 0% 87.50%, 1% 87.48%, 2% 87.43%, 3% 87.34%, 4% 87.22%, 5% 87.07%, 6% 86.88%, 7% 86.65%, 8% 86.40%, 9% 86.10%, 10% 85.78%, 11% 85.42%, 12% 85.03%, 13% 84.61%, 14% 84.16%, 15% 83.67%, 16% 83.16%, 17% 82.62%, 18% 82.04%, 19% 81.44%, 20% 80.81%, 21% 80.15%, 22% 79.47%, 23% 78.76%, 24% 78.02%, 25% 77.26%, 26% 76.48%, 27% 75.68%, 28% 74.85%, 29% 74.00%, 30% 73.13%, 31% 72.25%, 32% 71.35%, 33% 70.42%, 34% 69.49%, 35% 68.54%, 36% 67.57%, 37% 66.60%, 38% 65.61%, 39% 64.61%, 40% 63.60%, 41% 62.58%, 42% 61.56%, 43% 60.53%, 44% 59.50%, 45% 58.46%, 46% 57.42%, 47% 56.38%, 48% 55.34%, 49% 54.30%, 50% 53.26%, 51% 52.22%, 52% 51.19%, 53% 50.17%, 54% 49.15%, 55% 48.14%, 56% 47.14%, 57% 46.15%, 58% 45.17%, 59% 44.20%, 60% 43.25%, 61% 42.31%, 62% 41.38%, 63% 40.47%, 64% 39.58%, 65% 38.71%, 66% 37.86%, 67% 37.03%, 68% 36.22%, 69% 35.43%, 70% 34.66%, 71% 33.92%, 72% 33.21%, 73% 32.52%, 74% 31.85%, 75% 31.21%, 76% 30.60%, 77% 30.02%, 78% 29.47%, 79% 28.95%, 80% 28.46%, 81% 28.00%, 82% 27.57%, 83% 27.17%, 84% 26.81%, 85% 26.47%, 86% 26.17%, 87% 25.91%, 88% 25.68%, 89% 25.48%, 90% 25.31%, 91% 25.18%, 92% 25.09%, 93% 25.03%, 94% 25.00%, 95% 25.01%, 96% 25.05%, 97% 25.13%, 98% 25.24%, 99% 25.39%, 100% 25.57%)
+  }
+
+@media screen and (max-width:600px) {
+    .title-code-project{
+        font-size: large;
+        top: 20%;
+    }
+    
+.github-tips{
+    font-size: small;
+    top: 25%;
+}
+
+    .carousel .slider-wrapper{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .carousel .git-content .git-img{
+        width: 100%;
+        height:40vh;
+        object-fit: cover;
+    }
+    
+    .git-title-link{
+        font-size: 12px;
+    }
+    .git-description{
+        font-size: 10px;
+    }
+}
