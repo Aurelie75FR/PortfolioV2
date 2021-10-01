@@ -45,10 +45,10 @@ function About() {
               <Skills props="90" />
               <h5>REACT/HOOKS</h5>
               <Skills props="85" />
+              <h5>API</h5>
+              <Skills props="70" />
               <h5>BOOTSTRAP</h5>
               <Skills props="55" />
-              <h5>SCSS</h5>
-              <Skills props="40" />
             </div>
           </div>
           <div className="categories">

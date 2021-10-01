@@ -49,7 +49,7 @@
 /* container sur le placement */
 .skill-container {
   position: absolute;
-  top: 70%;
+  top: 72%;
   left: 35%;
   transform: translate(-50%, -50%);
   /* width: 100%; */
@@ -284,15 +284,15 @@
   }
 
   .about {
-    height: 200vh;
-    width: 105%;
+    height: 190vh;
+    width: 100vw;
   }
 
   .content {
     top: 19%;
     left: 50%;
     max-width: 450px;
-    min-width: 400px;
+    min-width: 360px;
   }
 
   .content p {
