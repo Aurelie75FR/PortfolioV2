@@ -8,7 +8,7 @@ function Home() {
 
 
     return (
-        <div className="home" id='Home'>
+        <div className="home" >
             <div className="txt">
      <h1 className="intro">Hello World</h1>
      <p className="pres">Web Developper Full Stack</p>

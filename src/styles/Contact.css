@@ -8,27 +8,32 @@
   color: pink;
 }
 
+.mapbox{
+  filter: drop-shadow(0px 3px 7px #f3c9a7);
+  -webkit-filter: drop-shadow(0px 3px 7px #f1b1de);
+}
+
 .presentation-fin {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 20%;
+  left: 38%;
   transform: translate(-50%, -50%);
 
-  background: #4f2974d3;
-  padding: 15px;
-  border-radius: 25px;
   width: 30%;
+
+  
 }
 
 .presentation-fin > p {
-  font-size: larger;
-  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: start;
 }
 
 .mail-header {
   position: absolute;
   top: 17%;
-  left: 75%;
+  left: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -37,7 +42,7 @@
   width: 30%;
 
   top: 50%;
-  left: 75%;
+  left: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -127,11 +132,13 @@ textarea {
 
 .resume {
   position: absolute;
-  bottom: 20%;
-  left: 20%;
+  bottom: 2%;
+  left: 80%;
   transform: translate(-50%, -50%);
+
   height: 10%;
   width: 30%;
+  text-align: center;
 }
 
 .mon-cv {
@@ -152,7 +159,7 @@ textarea {
     #573675b4 100%
   );
 
-  padding: 1rem;
+  padding: 0.5rem;
   width: 20rem;
   letter-spacing: 0.22em;
   outline: none;
@@ -199,6 +206,10 @@ textarea {
     display: none;
   }
 
+  .mapbox{
+    display: none;
+  }
+
   .mail-header {
     top: 6%;
     left: 50%;
@@ -229,7 +240,7 @@ textarea {
   }
   .links {
     bottom: 1%;
-    left: 55%;
+    left: 50%;
   }
   .footer {
     font-size: x-small;

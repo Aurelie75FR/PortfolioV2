@@ -5,7 +5,7 @@ import Skills from "../Components/Childs/Skills";
 
 function About() {
   return (
-    <div className="about" id="About">
+    <div className="about" >
   <div className="shadow">
         <img src="/images/avatarAurel.png" alt="Aurelie" className="circle" />
       </div>

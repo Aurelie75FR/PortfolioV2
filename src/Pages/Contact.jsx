@@ -1,8 +1,12 @@
 import React , {useRef} from "react";
 import emailjs from "emailjs-com";
+// import ReactMapGL, {StaticMap} from 'react-map-gl';
+import Map from "../Components/Childs/Map";
 import "../styles/Contact.css";
 
+
 function Contact() {
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -25,8 +29,13 @@ function Contact() {
       );
       e.target.reset();
   };
+// const marker = [48.840,2.400]
+
+
+
   return (
-    <div className="contact-page" id="Contact">
+    <div className="contact-page" >
+   <Map/>
       <div className="presentation-fin">
         <p>Aurelie Lopez-Vicente <br /> Paris, <b>France</b> <br /> Web Développeuse Full-Stack </p>
       </div>

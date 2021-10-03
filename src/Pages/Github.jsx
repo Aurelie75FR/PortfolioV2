@@ -5,7 +5,7 @@ import "../styles/Github.css";
 
 function Github() {
   return (
-    <div className="github" id="Github">
+    <div className="github" >
       <h2 className="title-code-project">
         {"< "}Codes et Projets{" />"}
       </h2>

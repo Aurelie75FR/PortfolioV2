@@ -5,6 +5,7 @@
   height: 100vh;
   z-index: 1;
 }
+
 .title-code-project {
   position: absolute;
   top: 10%;
@@ -37,9 +38,9 @@
   position: relative;
 }
 
-.carousel {
+/* .carousel {
   position: relative;
-}
+} */
 
 .carousel > .control-dots {
   display: flex;
@@ -50,16 +51,19 @@
 }
 
 .carousel .git-overlay {
-  width: 80%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 10%;
-  padding: 0.4rem 1.5rem;
+  transform: translateY(-50%);
+
   text-align: left;
-  background: rgba(0, 0, 0, 0.6);
   color: #ffff;
+
+  width: 80%;
+  padding: 0.4rem 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
 }
+
 .carousel .git-title-link {
   margin: 0.8rem 0 1rem 0;
 }
