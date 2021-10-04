@@ -5,7 +5,9 @@ import "../../styles/Contact.css";
 // const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGV2YXVyZWxpZSIsImEiOiJja3ViZmtjYnEwcTh3MzJsOXhsOWlhdmJyIn0.M4T8NOAoyst2wahkpOS65w";
-function Map() {
+const MAPBOX_MAP_STYLE = "mapbox://styles/devaurelie/ckubgga98686917o32cl2lwo9"
+
+  function Map() {
   const [viewport] = useState({
     latitude: 48.84,
     longitude: 2.4,
@@ -19,7 +21,7 @@ function Map() {
         height="100vh"
         {...viewport}
         mapboxApiAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/devaurelie/ckubgga98686917o32cl2lwo9"
+        mapStyle={MAPBOX_MAP_STYLE}
       />
     </div>
   );
