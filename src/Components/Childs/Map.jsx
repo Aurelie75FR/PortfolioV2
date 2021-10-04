@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
-import "../../styles/Contact.css"
+import "../../styles/Contact.css";
 
-const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
-
+// const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
+const MAPBOX_TOKEN =
+  "pk.eyJ1IjoiZGV2YXVyZWxpZSIsImEiOiJja3ViZmtjYnEwcTh3MzJsOXhsOWlhdmJyIn0.M4T8NOAoyst2wahkpOS65w";
 function Map() {
   const [viewport] = useState({
     latitude: 48.84,

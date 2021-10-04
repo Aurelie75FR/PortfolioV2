@@ -1,6 +1,5 @@
 import React , {useRef} from "react";
 import emailjs from "emailjs-com";
-// import ReactMapGL, {StaticMap} from 'react-map-gl';
 import Map from "../Components/Childs/Map";
 import "../styles/Contact.css";
 
@@ -29,9 +28,6 @@ function Contact() {
       );
       e.target.reset();
   };
-// const marker = [48.840,2.400]
-
-
 
   return (
     <div className="contact-page" >
