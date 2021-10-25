@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import "../../styles/Contact.css"
 
 const Form = () => {
   const form = useRef();
@@ -9,7 +10,6 @@ const Form = () => {
 
     emailjs
       .sendForm(
-          // `${process.env.SERVICE_ID}, ${process.env.TEMPLATE_ID}, ${process.env.USER_ID}`
           "service_vo6m80m",
           "template_2xqe41b",
           form.current,
@@ -23,17 +23,52 @@ const Form = () => {
           console.log(error.text);
         }
       );
+      e.target.reset();
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+    <form className="contact-form" ref={form} onSubmit={sendEmail}>
+      <div className="form-box">
+        <label htmlFor="name">Name</label>
+        <input
+          className="nameInput"
+          type="text"
+          name="name"
+          placeholder="Nom/Prénom"
+        />
+      </div>
+
+      <div className="form-box">
+        <label htmlFor="email">Email</label>
+        <input
+          className="emailInput"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+      </div>
+
+      <div className="form-box">
+        <label htmlFor="subject">Subject</label>
+        <input
+          className="subjectInput"
+          type="text"
+          name="subject"
+          placeholder="Sujet"
+        />
+      </div>
+
+      <div className="form-box">
+        <label htmlFor="message">Message</label>
+        <textarea
+          className="message-area"
+          name="message"
+          placeholder="Message ..."
+          rows="10"
+          cols="40"
+        />
+      </div>
+      <input type="submit" value="Envoyer" className="form-button" />
     </form>
   );
 };
